@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</head>
+
+<body onload="loadData()">
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cart.html">cart</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled">Disabled</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <section class="py-5 text-center container">
+        <div class="row py-lg-5">
+            <div class="col-lg-12 col-md-8 mx-auto">
+                <h1 class="fw-light">Abarrotes Don Edgar</h1>
+                <p class="lead text-muted">
+                    Laboramos de lunes a domingo, las 24 hrs y los 365 dias del año...
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row rows-cols-1 rows-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="/images/16444059_31751152_322.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">pulsera de diamantes</h5>
+                            <h6 class="card-subtitle mb-2 text-muted price">$1473</h6>
+                            <p class="card-text">diamantes del himalaya</p>
+                            <a id="prod0001" onclick="AddCart();" href="#" class="btn btn-info">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="/images/17303590_35630119_1000.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">botas negras </h5>
+                            <h6 class="card-subtitle mb-2 text-muted price">$20000</h6>
+                            <p class="card-text">botas aerodinamicas negras</p>
+                            <a id="prod0002" href="#" onclick="AddCart();" class="btn btn-info">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="/images/1940-prada-prada-amber-eau-de-parfum.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">perfume de la-banda</h5>
+                            <h6 class="card-subtitle mb-2 text-muted price">$10,000</h6>
+                            <p class="card-text">con olor a barrio.</p>
+                            <a id="prod0003"href="#" onclick="AddCart();" class="btn btn-info">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="/images/4378dd21441c7e4901f0de9a397f016d--about-heart-copper-rings.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">aretes </h5>
+                            <h6 class="card-subtitle mb-2 text-muted price">$999</h6>
+                            <p class="card-text">aretes para las orejas.</p>
+                            <a id="prod0004"href="#" onclick="AddCart();" class="btn btn-info">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="/images/8056597037280__002.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">lentes de sol</h5>
+                            <h6 class="card-subtitle mb-2 text-muted price">$1000</h6>
+                            <p class="card-text">Para un futuro brillante</p>
+                            <a id="prod0005"href="#" onclick="AddCart();" class="btn btn-info">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="/images/como-saber-si-un-bolso-prada-es-original-1591872120.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">bolso negro </h5>
+                            <h6 class="card-subtitle mb-2 text-muted price">$2030</h6>
+                            <p class="card-text">Para la elegancia.</p>
+                            <a id="prod0009"href="#" onclick="AddCart();" class="btn btn-info">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="/images/cq5dam.web.hebebed.800.1000.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">dona para cabello</h5>
+                            <h6 class="card-subtitle mb-2 text-muted price">$120</h6>
+                            <p class="card-text">Para no andar greñuda.</p>
+                            <a id="prod0010"href="#" onclick="AddCart();" class="btn btn-info">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
